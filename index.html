@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Shopping Cart</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main class="cart-page">
+		<section class="cart" aria-labelledby="cart-title">
+			<div class="cart__header">
+				<div>
+					<p class="eyebrow">Your basket</p>
+					<h1 id="cart-title">Shopping Cart</h1>
+				</div>
+				<p class="cart__count"><span id="item-count">3</span> items</p>
+			</div>
+
+			<div id="cart-items" class="cart__items">
+				<article class="cart-item" data-price="5000">
+					<div class="product-icon product-icon--orange" aria-hidden="true">🎧</div>
+					<div class="cart-item__details">
+						<h2>Wireless Headphones</h2>
+						<p class="cart-item__unit-price">₦5,000 each</p>
+						<div class="cart-item__actions">
+							<div class="quantity-control" aria-label="Wireless Headphones quantity">
+								<button class="quantity-button decrease" type="button" aria-label="Decrease Wireless Headphones quantity">−</button>
+								<span class="quantity">1</span>
+								<button class="quantity-button increase" type="button" aria-label="Increase Wireless Headphones quantity">+</button>
+							</div>
+							<button class="icon-button like-button" type="button" aria-label="Like Wireless Headphones" aria-pressed="false">♡</button>
+							<button class="delete-button" type="button">Delete</button>
+						</div>
+					</div>
+					<p class="item-total">₦5,000</p>
+				</article>
+
+				<article class="cart-item" data-price="12500">
+					<div class="product-icon product-icon--blue" aria-hidden="true">⌨</div>
+					<div class="cart-item__details">
+						<h2>Mechanical Keyboard</h2>
+						<p class="cart-item__unit-price">₦12,500 each</p>
+						<div class="cart-item__actions">
+							<div class="quantity-control" aria-label="Mechanical Keyboard quantity">
+								<button class="quantity-button decrease" type="button" aria-label="Decrease Mechanical Keyboard quantity">−</button>
+								<span class="quantity">1</span>
+								<button class="quantity-button increase" type="button" aria-label="Increase Mechanical Keyboard quantity">+</button>
+							</div>
+							<button class="icon-button like-button" type="button" aria-label="Like Mechanical Keyboard" aria-pressed="false">♡</button>
+							<button class="delete-button" type="button">Delete</button>
+						</div>
+					</div>
+					<p class="item-total">₦12,500</p>
+				</article>
+
+				<article class="cart-item" data-price="8000">
+					<div class="product-icon product-icon--green" aria-hidden="true">⌁</div>
+					<div class="cart-item__details">
+						<h2>Smart Watch</h2>
+						<p class="cart-item__unit-price">₦8,000 each</p>
+						<div class="cart-item__actions">
+							<div class="quantity-control" aria-label="Smart Watch quantity">
+								<button class="quantity-button decrease" type="button" aria-label="Decrease Smart Watch quantity">−</button>
+								<span class="quantity">1</span>
+								<button class="quantity-button increase" type="button" aria-label="Increase Smart Watch quantity">+</button>
+							</div>
+							<button class="icon-button like-button" type="button" aria-label="Like Smart Watch" aria-pressed="false">♡</button>
+							<button class="delete-button" type="button">Delete</button>
+						</div>
+					</div>
+					<p class="item-total">₦8,000</p>
+				</article>
+			</div>
+
+			<div class="cart__footer">
+				<p>Total</p>
+				<strong id="cart-total">₦25,500</strong>
+			</div>
+		</section>
+	</main>
+	<script src="index.js"></script>
+</body>
+</html>
